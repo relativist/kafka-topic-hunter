@@ -78,11 +78,6 @@
             <artifactId>big-starter</artifactId>
             <version>${big-starter.version}</version>
         </dependency>
-        <dependency>
-            <groupId>ru.element.lab</groupId>
-            <artifactId>big-kafka-starter</artifactId>
-            <version>${big-kafka.version}</version>
-        </dependency>
         <!--suppress VulnerableLibrariesLocal -->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
