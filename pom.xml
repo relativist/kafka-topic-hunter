@@ -13,7 +13,7 @@
     <artifactId>kafka-topic-hunter</artifactId>
     <version>0.0.1</version>
     <name>kafka-topic-hunter</name>
-    <description>Дедупликация данных в постобработке загрузки в greenplum</description>
+    <description>Ловим топики и сохраняем в базу.</description>
 
     <properties>
         <postgresql.version>42.4.2</postgresql.version>
@@ -24,8 +24,6 @@
         <dbunit.version>2.7.0</dbunit.version>
         <big-starter.version>0.3.0-SNAPSHOT</big-starter.version>
         <metamodel-api-version>0.2.0-SNAPSHOT</metamodel-api-version>
-        <metadata-mapping-api-version>0.3.2-SNAPSHOT</metadata-mapping-api-version>
-        <big-kafka.version>0.1.0-SNAPSHOT</big-kafka.version>
         <awaitility.version>3.0.0</awaitility.version>
         <emd.api.version>0.2.0-SNAPSHOT</emd.api.version>
     </properties>
