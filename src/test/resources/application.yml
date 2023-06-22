@@ -1,0 +1,45 @@
+spring:
+  kafka:
+    consumer:
+      group-id: test
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        timeout:
+          ms: '600000'
+        message:
+          max:
+            bytes: '2147483646'
+        max:
+          request:
+            size: '2147483646'
+        buffer:
+          memory: '10347483646'
+      key-serializer: org.apache.kafka.common.serialization.UUIDSerializer
+      batch-size: '33554432'
+      buffer-memory: '10347483646'
+    bootstrap-servers: localhost:9093
+    properties:
+      delivery:
+        timeout:
+          ms: '600000'
+      request:
+        timeout:
+          ms: '600000'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DATABASE_JDBC_URI:jdbc:postgresql://192.168.100.30:5432/emd_ods_mapping_v2}
+    username: ${DATABASE_USER:remd}
+    password: ${DATABASE_PASSWORD:remd-masterkey}
+  application:
+    name: kafka-topic-hunter
+
+kafka:
+  oms-topic: ${OMS_TOPIC:raw-oms}
+  oms-big-file-topic: ${OMS_BIG_FILE_TOPIC:raw-oms-big}
+  emd-topic: ${EMD_TOPIC:raw-emd}
+  group-id: ${EMD_GROUP_ID:test}
+
+logging:
+  level:
+    root: ${LOGGING_LEVEL:info}

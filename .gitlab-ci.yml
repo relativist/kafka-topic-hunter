@@ -1,0 +1,4 @@
+include:
+  - project: 'bigdata/common/gitlab-ci-cd'
+    ref: develop
+    file: '/java/8/.gitlab-ci.yml'

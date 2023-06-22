@@ -1,0 +1,28 @@
+server:
+  port: 8083
+
+spring:
+  kafka:
+    consumer:
+      group-id: kafka-topic-hunter
+    bootstrap-servers: 192.168.100.24:9092
+  application:
+    name: kafka-topic-hunter
+
+#Jdbc Repository
+etl:
+  source-url: jdbc:postgresql://192.168.100.47:5432/nds
+  source-user: tech_java_user
+  source-password: KTNem0KYz1
+  source-driver: org.postgresql.Driver
+
+ods-emd-node:
+  source-url: jdbc:postgresql://192.168.100.30:5432/remd_test
+  source-user: remd
+  source-password: remd-masterkey
+  source-driver: org.postgresql.Driver
+
+
+logging:
+  level:
+    root: ${LOGGING_LEVEL:info}

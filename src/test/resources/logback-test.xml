@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+
+    <logger name="org.eclipse.jetty.util.log.Log" level="ERROR"/>
+    <logger name="org.springframework" level="ERROR"/>
+    <logger name="org.apache.hadoop" level="ERROR"/>
+    <logger name="org.apache.spark" level="ERROR"/>
+    <logger name="org.apache.kafka" level="ERROR"/>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
+    </root>
+</configuration>

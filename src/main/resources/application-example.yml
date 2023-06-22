@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://192.168.100.30:5432/remd_parser_test
+    username: remd
+    password: remd-masterkey
+
